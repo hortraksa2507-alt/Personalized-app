@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Study Hub · your cozy focus space</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Caveat:wght@600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">
+    <span class="brand-cloud">☁️</span>
+    <div>
+      <h1>Study Hub</h1>
+      <p id="greeting">good afternoon, let's get things done</p>
+    </div>
+  </div>
+
+  <div class="topbar-right">
+    <div class="today-chip" id="today-chip"></div>
+    <nav class="app-dock" aria-label="Quick launch your everyday tools">
+      <a class="dock-icon spotify" href="https://open.spotify.com" target="_blank" rel="noopener" title="Spotify">
+        <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm4.6 14.5a.62.62 0 0 1-.86.2c-2.36-1.44-5.33-1.77-8.83-.97a.62.62 0 1 1-.28-1.22c3.83-.87 7.11-.5 9.76 1.13.3.18.39.57.21.86zm1.23-2.73a.78.78 0 0 1-1.07.26c-2.7-1.66-6.82-2.14-10-1.17a.78.78 0 1 1-.46-1.5c3.65-1.1 8.18-.57 11.28 1.34.36.23.48.7.25 1.07zm.1-2.85C14.7 9 9.35 8.82 6.26 9.75a.94.94 0 1 1-.54-1.79c3.55-1.08 9.44-.87 13.16 1.34a.94.94 0 0 1-.96 1.62z"/></svg>
+      </a>
+      <a class="dock-icon notion" href="https://www.notion.so" target="_blank" rel="noopener" title="Notion">
+        <svg viewBox="0 0 24 24"><path fill="currentColor" d="M4.46 4.19 14.4 3.4c1.22-.1 1.53-.03 2.3.53l3.18 2.24c.52.38.7.49.7 .9v12.05c0 .77-.28 1.22-1.26 1.29l-11.54.7c-.73.03-1.08-.07-1.46-.56L3.98 17.5c-.42-.56-.6-.98-.6-1.47V5.4c0-.63.28-1.16 1.08-1.22zm10.15 1.4-9.1.67c-.35.07-.42.25-.28.42l1.36 1.5c.14.14.35.24.63.21l9.16-.66c.42-.04.49-.28.28-.46l-1.47-1.4c-.21-.21-.35-.31-.58-.28zM6.9 9.6v8.9c0 .48.24.66.77.63l10-.6c.53-.03.6-.35.6-.73V9c0-.38-.14-.59-.46-.56l-10.45.62c-.35.04-.46.21-.46.56zm9.06.87c.06.28 0 .56-.28.6l-.46.09v6.85c-.4.22-.77.34-1.08.34-.5 0-.63-.15-1-.62l-3.1-4.88v4.72l.96.22s0 .56-.77.56l-2.13.13c-.07-.14 0-.49.24-.55l.56-.16v-6.13l-.77-.06c-.07-.28.09-.69.52-.72l2.28-.16 3.14 4.82v-4.26l-.8-.1c-.07-.34.18-.59.49-.62l2.2-.13z"/></svg>
+      </a>
+      <a class="dock-icon gmail" href="https://mail.google.com" target="_blank" rel="noopener" title="Gmail">
+        <svg viewBox="0 0 24 24"><path fill="currentColor" d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+      </a>
+      <a class="dock-icon gcal" href="https://calendar.google.com" target="_blank" rel="noopener" title="Google Calendar">
+        <svg viewBox="0 0 24 24"><path fill="currentColor" d="M19 4h-1V2h-2v2H8V2H6v2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2z"/></svg>
+      </a>
+      <a class="dock-icon gdrive" href="https://drive.google.com" target="_blank" rel="noopener" title="Google Drive">
+        <svg viewBox="0 0 24 24"><path fill="currentColor" d="m7.71 3.5-4.7 8.15 3.52 6.1 4.7-8.15L7.71 3.5zm1.15 0 4.71 8.15h7.04L15.9 3.5H8.86zM14.5 12.8l-3.52 6.1h9.42l3.52-6.1H14.5z"/></svg>
+      </a>
+      <a class="dock-icon sheets" href="https://docs.google.com/spreadsheets" target="_blank" rel="noopener" title="Sheets / Excel">
+        <svg viewBox="0 0 24 24"><path fill="currentColor" d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2zm-8 16H5v-4h6v4zm0-6H5V9h6v4zm8 6h-6v-4h6v4zm0-6h-6V9h6v4z"/></svg>
+      </a>
+    </nav>
+  </div>
+</header>
+
+<main class="grid">
+
+  <!-- ══════════════ STUDY TIMER ══════════════ -->
+  <section class="card timer-card" id="timer-card">
+    <div class="card-head">
+      <h2>🍅 study timer</h2>
+      <div class="timer-modes" role="tablist">
+        <button class="mode-btn active" data-mode="focus">focus</button>
+        <button class="mode-btn" data-mode="short">short break</button>
+        <button class="mode-btn" data-mode="long">long break</button>
+      </div>
+    </div>
+
+    <div class="timer-ring-wrap">
+      <svg class="timer-ring" viewBox="0 0 260 260">
+        <circle class="ring-bg" cx="130" cy="130" r="116" />
+        <circle class="ring-fg" id="ring-fg" cx="130" cy="130" r="116" />
+      </svg>
+      <div class="timer-center">
+        <div class="timer-time" id="timer-time">25:00</div>
+        <div class="timer-label" id="timer-label">ready to focus</div>
+      </div>
+    </div>
+
+    <div class="timer-controls">
+      <button class="btn ghost" id="timer-reset" title="Reset">↺</button>
+      <button class="btn primary big" id="timer-toggle">start</button>
+      <button class="btn ghost" id="timer-skip" title="Skip to next">⏭</button>
+    </div>
+
+    <div class="session-dots" id="session-dots" title="Pomodoros until long break"></div>
+    <p class="timer-hint">4 focus sessions → long break · breaks start automatically 💗</p>
+  </section>
+
+  <!-- ══════════════ TO-DO LIST ══════════════ -->
+  <section class="card todo-card">
+    <div class="card-head">
+      <h2>✅ to-do list</h2>
+      <span class="pill" id="todo-count"></span>
+    </div>
+
+    <form class="todo-add" id="todo-form" autocomplete="off">
+      <input type="text" id="todo-input" placeholder="e.g. read 20 pages of biology…" />
+      <input type="date" id="todo-date" title="Due date (goes on your calendar)" />
+      <button class="btn primary" type="submit">add</button>
+    </form>
+    <div class="estimate-chip hidden" id="estimate-chip"></div>
+
+    <ul class="todo-list" id="todo-list"></ul>
+
+    <div class="todo-footer">
+      <button class="btn soft" id="auto-plan">✨ auto-plan my day</button>
+      <button class="btn ghost small" id="clear-done">clear done</button>
+    </div>
+    <ol class="day-plan hidden" id="day-plan"></ol>
+  </section>
+
+  <!-- ══════════════ CALENDAR ══════════════ -->
+  <section class="card calendar-card">
+    <div class="card-head">
+      <h2>📅 calendar</h2>
+      <div class="cal-nav">
+        <button class="btn ghost small" id="cal-prev">‹</button>
+        <span id="cal-title"></span>
+        <button class="btn ghost small" id="cal-next">›</button>
+      </div>
+    </div>
+    <div class="cal-grid" id="cal-grid"></div>
+    <div class="cal-day-detail" id="cal-day-detail">
+      <p class="muted">tap a day to see what's due 🌱</p>
+    </div>
+  </section>
+
+  <!-- ══════════════ LOFI PLAYER ══════════════ -->
+  <section class="card lofi-card">
+    <div class="card-head">
+      <h2>🎧 lofi corner</h2>
+      <span class="pill">now playing</span>
+    </div>
+
+    <div class="lofi-frame-wrap" id="lofi-frame-wrap">
+      <iframe id="lofi-frame"
+        src="https://www.youtube-nocookie.com/embed/jfKfPfyJRdk?rel=0"
+        title="lofi playlist" frameborder="0" allowfullscreen
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+    </div>
+
+    <div class="lofi-presets" id="lofi-presets">
+      <button class="preset active" data-video="jfKfPfyJRdk">☕ lofi girl — beats to study</button>
+      <button class="preset" data-video="4xDzrJKXOOY">🌧 synthwave — chill nights</button>
+      <button class="preset" data-video="S_MOd40zlYU">🌙 sleepy jazz lofi</button>
+    </div>
+
+    <div class="ambience">
+      <span class="ambience-label">mix in ambience:</span>
+      <button class="amb-btn" id="amb-rain">🌧 rain</button>
+      <button class="amb-btn" id="amb-cafe">☕ café hum</button>
+    </div>
+  </section>
+
+  <!-- ══════════════ STICKY NOTE BRAINSTORM BOARD ══════════════ -->
+  <section class="card board-card">
+    <div class="card-head">
+      <h2>🗒 brainstorm board</h2>
+      <div class="board-actions">
+        <span class="muted small-note">drag notes anywhere · double-click board to add</span>
+        <button class="btn primary" id="add-note">+ sticky note</button>
+      </div>
+    </div>
+    <div class="board" id="board"></div>
+  </section>
+
+</main>
+
+<footer class="footer">made with 💗 for focused, cozy study sessions · everything saves automatically in your browser</footer>
+
+<div class="toast" id="toast"></div>
+<script src="app.js"></script>
+</body>
+</html>
