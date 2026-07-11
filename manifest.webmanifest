@@ -1,0 +1,13 @@
+{
+  "name": "Study Hub · your cozy focus space",
+  "short_name": "Study Hub",
+  "description": "Pomodoro timer, smart to-dos, calendar, lofi and sticky notes — all in one cozy study space.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fdf6f0",
+  "theme_color": "#f2a7b3",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
